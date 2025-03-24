@@ -5,31 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fin side</title>
+    <link rel="stylesheet" href="hei.css">
 </head>
 
 <body id="body">
-    <h1 id="overskrift"></h1>
-
-    <input type="text" id="overskriftinn">
-    <button onclick="overskrift()">Legg til overskrift</button>
-    <br>
-    <input type="text" id="input">
-    <button onclick="add()">Add</button>
-<br>
-    <input type="text" id="tekstinn">
-    <button onclick="tekst()">Skriv tekst som du vil ha på siden</button>
-    <p id="fintekst"></p>
-<br>
-    <input type="text" id="tekstfarge">
-    <button onclick="tekstfarge()">Endre farge tekst</button>
-<br>
-<input type="text" id="listeinn">
-<button onclick="liste()">Ting i handeliste</button>
-
-    <ul id="minliste">
-    </ul>  
-
-
+    <div class="halveskjermen">
+        <div class="Venstreside">
+            
+            
+            
+            <!-- Her er alle knappene som putter ting inn på skjermen -->
+            <div class="eninputtalt">
+                <label for="overskriftinn">Overskrift</label>
+                <div>
+                    <input type="text" placeholder="Legg til overskrift" id="overskriftinn">
+                    <button id="leggtiloverskrift">Legg til</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="eninputtalt">
+                <label for="fargeinn">Farge bakgrunn</label>
+                <div>
+                    <input type="text" placeholder="Farge bakgrunnen" id="fargeinn">
+                    <button id="bytterfarge">Legg til</button>
+                </div>
+            </div>
+            <br>
+            <div class="eninputtalt">
+                <label for="tekstinn">Tekst til siden</label>
+                <div>
+                    <input type="text" placeholder="Skriv tekst som du vil ha på siden" id="tekstinn">
+                    <button id="leggetiltekst">Legg til</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <button id="flytttekstenhøyre">flytt teksten +</button>
+            <button id="flytttekstenvenstre">flytt teksten -</button>
+            <br>
+            <br>
+            <div class="eninputtalt">
+                <label for="tekstfarge">Endre farge på teksten</label>
+                <div>
+                    <input type="text" placeholder="Endre fargen på teksten" id="tekstfarge">
+                    <button id="endretekstfarge">Endre</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="eninputtalt">
+                <label for="listeinn">Legg til i listen</label>
+                <div>
+                    <input type="text" placeholder="Skriv noe du vil ha i listen din" id="listeinn">
+                    <button id="leggtilliste">Legg til</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <button id="leggtilbilde">Legg til bilde</button>
+            
+            <br>
+            
+            
+            
+            <!-- Her er alt som er på venstre side av skjermen og som plaseres inn på skjermen av brukeren -->
+        </div>
+        <div id="høyre" class="høyreside">
+            <h1 id="overskrift"></h1>
+            <p id="fintekst"></p>
+            <ul id="minliste">
+            </ul> 
+            <div id="bilde"></div>
+            
+            
+            
+        </div>
+    </div>
 </body>
 <script src='javascript.js'></script>
 
